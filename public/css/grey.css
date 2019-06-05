@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 766px) {
+
+    .mobile-spacing{
+        margin-bottom: 50px;
+    }
+
+    .hover-txt-cf{
+        margin-left:100px;
+    }
+
+    .hover-txt-d{
+        margin-left:100px;
+    }
+
+    .hover-txt-n{
+        margin-left:100px;
+    }
+}
+
+html, body{
+    height:100%;
+    margin: 0;
+}
+
+.blue-bg{
+    background: url(/images/background-grey.png) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover; 
+
+}
+
+.nav-font{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+   
+}
+
+.navbar-toggler{
+    color:white !important;
+}
+
+.title-font{
+    font-family: 'Playfair Display', serif;
+    font-size:30px;
+    letter-spacing: 2px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.menu-margin{
+    margin-top:90px;
+}
+
+.solve-menu-margin{
+    margin-top:50px;
+}
+
+.button-position{
+    position:relative;
+    display: inline-block;
+}
+
+.button-position .hover{
+    display:none;
+    position:absolute;
+    top:0;
+    left:1px;
+    bottom:0px;
+    z-index: 1;
+}
+
+.button-position:hover .hover{
+    display:inline;
+}
+
+.hover-txt-cf{
+position:absolute;
+left:105px;
+color:white;
+visibility:hidden;
+padding-top:4px;
+font-family: 'Playfair Display', serif;
+}
+
+    .hovering-text-cf{
+        position:relative;
+    }
+
+.hover-txt-d{
+    position:absolute;
+    left:105px;
+    color:white;
+    visibility:hidden;
+    padding-top:4px;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .hovering-text-d{
+        position:relative;
+    }
+.hover-txt-n{
+    position:absolute;
+    left:120px;
+    color:white;
+    visibility:hidden;
+    padding-top:4px;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .hovering-text-n{
+        position:relative;
+    }
+.hover-txt-s{
+    position:absolute;
+    
+    left:68px;
+    color:white;
+    visibility:hidden;
+    padding-top:4px;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .hovering-text-s{
+        position:relative;
+    }
+
+.main-footer{
+	margin-top:50px;
+}
+
+.footer{
+    margin-top:-50px;
+    height:50px;
+
+}
+
+.footer-a{
+    background-color:black;
+}
+
+.footer-text{
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size:16px;
+}
+
+
+.footer-list{
+    list-style: none;
+    padding-top:20px;
+
+}
+
+.footer-text:hover{
+    color:grey;
+    text-decoration:none;
+   
+}
+
+.footer-spacing{
+    padding-bottom:5px;
+}
+
+.copyright-text{
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size:12px;
+    padding-top:20px;
+}
+
+.navbar-default{
+    background-color:black;
+}
+
+#sidebar-wrapper{
+    background-color:pink;
+    width:180px;
+    height: 100%;
+    padding-top: 20px;
+    float:left;
+    position:fixed;
+}
+
+.icon-a{
+    margin-bottom:100px;
+}
+
+.wrapper{
+    background-color:white;
+    min-height: 100%;
+}
+
+.bg-color-white{
+    background-color:white;
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size:30px;
+    letter-spacing:2px;
+}
+
+.content{
+    min-height: 100%;
+}
+
+.content-inside {
+    padding:20px;
+    padding-bottom:50px;
+}
+
+.graphic{
+    text-align: center;
+}
+
+.small-btn-hover:hover{
+    background-color: grey;
+    opacity:0.8;
+}
+
+.h2-title{
+    font-family: 'Playfair Display', serif;
+    font-size:25px;
+    letter-spacing:2px;
+}
+
+.h3-title{
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+    letter-spacing:2px; 
+    font-style: italic;
+    margin-top:9px;
+}
+
+.img-resize{
+    max-width:25%;
+    height:auto;
+}
+
+.card{
+    margin: 0 auto;
+    float: none;
+    margin-bottom:10px;
+}
+
+.card-text{
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 2px solid lightgrey transparent;
+}
+
+.card-text:hover{
+    border: 2px solid lightgrey;
+    color:black !important;
+    margin:-2px;
+
+}
+
+.card-body{
+    padding: 20px 0;
+}
+
+.directory-links{
+    color:black;
+}
+
+.directory-links:hover{
+    color:grey;
+    text-decoration: none;
+}
+
+
+.detail-graphic{
+    background-color:white;
+    max-width:100%;
+}
+
+.feedback-messages{
+	max-width:100%;
+	background-color:white;
+	opacity: 0.5;
+	padding-left:10px;
+}
+	
+.feedback-head{
+	font-size:18px;
+	font-style:italic;
+	padding-top:10px;
+	color:black;
+}
+
+.feedback-name{
+	font-size:14px;
+	font-style:italic;
+	font-weight:bold;
+	color: black;
+
+}
+	
+.feedback-message{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	color:black;
+
+}
+
+.notes-head{
+	font-size:25px;
+	font-style:bold;
+	padding-top:10px;
+    color:black;
+    font-family: courier, monospace;
+
+}
+
+.notes-message{
+	font-size: 20px;
+	font-weight:normal;
+    color:black;
+    margin-left:10px;
+    font-family: courier, monospace;
+    border-bottom: 1px dotted #ccc;
+    text-indent:25px;
+
+
+}
+
+.notes-message:hover{
+    background-color: #f0f0f0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2;
+}
+
+.notes-bg{
+    background-color:#f5f5f5;
+}
+
+.input-field{
+    text-align: center;
+    margin-top:20px;
+}
+
+input#task{
+    width:300px;
+}
+
+.hidden{
+    display:none;
+}
+
+
+.date-style{
+    font-size:16px;
+    font-style:italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.home-button{
+    text-align:right;
+}
+
+.bottom-directory{
+    margin-top:40px;
+}
+
+.background-color{
+    background-image:linear-gradient(rgb(18, 18, 19), #fff);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.delete-item{
+    float:right;
+    color:black;
+    text-decoration: none;
+    background-color:transparent;
+    padding-right:5px;
+}
+
+.bookmark-title{
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;
+
+}
+
+.bookmark-img{
+    width:50%;
+    height:auto;
+    margin-top:17px;
+}
+
+.bookmark-bg{
+    border-style: dotted;
+    border-color:grey;
+}
+
+.evidence-style{
+    width:40%;
+    height:auto;
+    margin-right: 20px;
+    margin-top:10px;
+    margin-left:40px;
+}
+

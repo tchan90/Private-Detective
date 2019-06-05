@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    link#pagestyle(rel='stylesheet', href='/css/mycss.css', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display', rel='stylesheet')
+    title Private Detective
+  body.blue-bg
+    // nav
+    nav.navbar.navbar-expand-lg.navbar-dark
+      a.navbar-brand.title-font(href='/') PRIVATE DETECTIVE : A crime solving game
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link.nav-font(href='/howtoplay') How to Play
+          li.nav-item
+            a.nav-link.nav-font(href='/feedback') Feedback
+          li.nav-item.dropdown
+            a#navbarDropdownMenuLink.nav-link.dropdown-toggle.nav-font(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Customize Background
+            .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+              a.dropdown-item.nav-font(onclick="swapStyleSheet('css/grey.css')") Grey
+              a.dropdown-item.nav-font(onclick="swapStyleSheet('css/mycss.css')") Blue
+    .alert.alert-success.alert-dismissible.fade.show(role='alert')
+        h4.alert-heading Welcome to Private Detective!
+        button.close(type='button', data-dismiss='alert', aria-label='Close')
+          span(aria-hidden='true') ×
+        p
+          | If this is your first time, go to the case file first and read about the case. 
+        hr
+        p.mb-0
+          |Then find evidence and clues to solve the case! 
+    .container.menu-margin.d-flex.justify-content-center
+      .row
+        .col-sm-12.col-md-4.pr-4.d-flex.justify-content-center.mobile-spacing
+          a(href='/casefile')
+            img#casefile.hovering-text-cf(src='/images/large buttons/casefile-large.png', alt='casefile')
+            p.hover-txt-cf Case File
+        .col-sm-12.col-md-4.pr-4.d-flex.justify-content-center.mobile-spacing
+          a(href='/directory')
+            img#directory.hovering-text-d(src='/images/large buttons/directory-large.png', alt='directory')
+            p.hover-txt-d Directory
+        .col-sm-12.col-md-4.pr-4.d-flex.justify-content-center.mobile-spacing
+          a(href='/notes')
+            img#notes.hovering-text-n(src='/images/large buttons/notes-large.png', alt='notes')
+            p.hover-txt-n Notes
+    .container.solve-menu-margin.d-flex.justify-content-center
+      .row
+        .col-sm-12.col-md-12
+          a.button-position(href='/solve')
+            img#solve.hovering-text-s(src='/images/large buttons/solve-large.png', alt='solve')
+          p.hover-txt-s Solve    
+    footer.container.mt-5
+      .row
+        .col
+          ul.footer-list
+            li
+              a.footer-text(href='#') Terms and Conditions
+            li
+              a.footer-text(href='#') Privacy Policy
+        div
+          .container.copyright-text
+            | Copyright 
+            span#date
+            |  P.D: A crime solving game
+    include layout/includes/scripts
+
+    

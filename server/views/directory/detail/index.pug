@@ -1,0 +1,39 @@
+extends ../../layout/index
+block content
+  .content
+    .col-md-10.m-auto 
+      main.hidden
+        br
+        .bg-color-white.jumbotron.jumbotron-fluid.rounded.shadow.p-3.mb-5.content-inside
+          .container
+            nav(aria-label='breadcrumb')
+              ol.breadcrumb
+                li.breadcrumb-item(aria-current='page')
+                  a(href='/directory') Directory
+                li.breadcrumb-item.active(aria-current='page')=directory.name
+            h1.display-4=directory.name
+            br
+          div(style='text-align: center;')
+            img.img-fluid(src=`/images/${directory.shortname}.png`, alt=`CasePhoto for ${directory.shortname}`)
+          br
+          p!=directory.information
+          br
+          if evidence && evidence.length
+            div.bg-color-white.rounded.shadow.p-3.mb-5.bookmark-bg
+              h3.mt-1.bookmark-title Evidence 
+              each thumb, index in evidence
+                img.img-thumbnail.evidence-style(src=`/images/evidence/${thumb}`,alt=`Evidence ${index}`)
+          .container.bottom-directory
+            .row      
+              .col-sm-12.col-md-6
+                a(href="/directory")
+                  button.btn.btn-outline-dark(type='button') Back
+              .col-sm-12.col-md-6.home-button
+                a(href="/")
+                  button.btn.btn-outline-dark(type='button') Home
+
+
+
+
+
+

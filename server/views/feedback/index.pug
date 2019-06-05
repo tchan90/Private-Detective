@@ -1,0 +1,47 @@
+extends ../layout/index
+block content
+  .content
+    .col-md-10.m-auto
+      main
+        br
+        .bg-color-white.rounded.shadow.p-3.mb-5.content-inside
+          h1.title FEEDBACK
+          if error
+            .alert.alert-danger
+              | There was an error handling your request! Did you fill in all the fields?
+          else if success
+            .alert.alert-success
+              | Thank you for your feedback!
+        .bg-color-white.rounded.shadow.p-3.mb-5
+          form(action='/feedback', method='POST')
+            .form-group
+              label Name
+              input.form-control(type='text', placeholder='Name', name='fbName', value=fbName)
+            .form-group
+              label Title
+              input.form-control(type='text', placeholder='Title of feedback', name='fbTitle', value=fbTitle)
+            .form-group
+              label Feedback
+              textarea.form-control(placeholder='We are happy to hear some feedback!', rows='6', name='fbMessage')=fbMessage
+            button.btn.btn-primary(type='submit') Submit
+        .bg-color-white.rounded.shadow.p-3.mb-5
+          h2.h2-title Recent Feedback
+          if !feedbacklist || !feedbacklist.length
+            | No feedback so far! Be the first.
+          else
+            .feedback-messages
+              each item in feedbacklist
+                .feedback-head
+                  .feedback-title=item.title
+                .feedback-name.badge.badge-warning
+                  .feedback-name.label=item.name
+                .feedback-message
+                  .feedback-message=item.message
+  
+
+
+
+
+
+
+

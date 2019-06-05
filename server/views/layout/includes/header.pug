@@ -1,0 +1,25 @@
+header
+nav.navbar.navbar-expand-lg.navbar-dark.navbar-default
+  a.navbar-brand.title-font(href='/') P.D
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNavDropdown.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto
+      li.nav-item.ml-2
+        a.nav-link.nav-font.small-btn-hover(href='/casefile')
+          img(src='/images/small buttons/case-small-btn.png', alt='casefile-small')
+      li.nav-item.ml-2
+        a.nav-link.nav-font.small-btn-hover(href='/directory')
+          img(src='/images/small buttons/directory-small-btn.png', alt='directory-small')
+      li.nav-item.ml-2
+        a.nav-link.nav-font.small-btn-hover(href='/notes')
+          img(src='/images/small buttons/notes-small-btn.png ', alt='notes-small')
+      li.nav-item.ml-2
+        a.nav-link.nav-font.small-btn-hover(href='/solve')
+          img(src='/images/small buttons/solve-small-btn.png', alt='solve-small')
+      li.nav-item.ml-2.dropdown
+        a#navbarDropdownMenuLink.nav-link.dropdown-toggle.nav-font(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | Customize Background
+        .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+          a.dropdown-item.nav-font(onclick="swapStyleSheet('/css/grey.css')") Grey
+          a.dropdown-item.nav-font(onclick="swapStyleSheet('/css/mycss.css')") Blue

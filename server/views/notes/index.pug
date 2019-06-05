@@ -1,0 +1,36 @@
+extends ../layout/index
+block content
+  .content
+    .col-md-10.m-auto
+      br
+      .bg-color-white.rounded.shadow.p-3.mb-5.content-inside
+        h1.title NOTES
+      #main.card
+        .card-content
+          .card-title
+            // card title
+            div
+              form#task-form
+                .input-field
+                  input#task(type='text', name='task')
+                  // task input
+                  button.btn.btn-outline-dark(type='submit') Add Note
+                  // Add button
+          div.container
+            // tasks list
+            h5.notes-head Notes Taken
+            .input-field
+            ul.collection.notes-bg
+    
+      if evidence && evidence.length
+        div.bg-color-white.rounded.shadow.p-3.mb-5.bookmark-bg
+          h3.mt-2.bookmark-title Evidence Collected
+          each thumbnail, index in evidence
+            img.img-thumbnail.evidence-style(src=`/images/evidence/${thumbnail}`,alt=`Photo{index}`)
+
+
+
+
+
+
+

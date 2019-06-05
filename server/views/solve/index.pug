@@ -1,0 +1,22 @@
+extends ../layout/index
+block content
+  .content
+    .col-md-10.m-auto
+      main
+        br
+        .bg-color-white.rounded.shadow.p-3.mb-5.content-inside
+          h1.title SOLVE
+        .bg-color-white.rounded.shadow.p-3.mb-5
+          h2.h2-title Who commited the crime?
+          h3.h3-title Pick a name from the list below.
+          br
+          form#drop-down
+            .form-group
+              select#solveNames.form-control
+                option(value='Pick a name') ...
+                option(value='Correct, Marcus was the murderer. Well done!')  Marcus  Black
+                option(value='You have picked the wrong suspect!') Florence Brown
+                option(value='You have picked the wrong suspect!') Peter Green
+                option(value='You have picked the wrong suspect!') Devine Silver
+              .text-center.mt-4
+                button#submit.btn.btn-outline-dark(type='submit') Submit

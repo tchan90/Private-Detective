@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css',rel='stylesheet')
+    link(rel='stylesheet', href='/css/error.css', type='text/css')
+
+
+.wrapper
+  h1 Oh no...
+  p We have hit an error...
+  .buttons
+    a(href="/") home
+  
+  if(error)
+            // =error.stack grabs the error then accesses the stack
+            pre=error.stack
+
+  
+.space
+  .blackhole
+  
