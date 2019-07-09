@@ -1,7 +1,7 @@
 # Private Detective
 Project for Tafe, assesment to build a NodeJS website using a local JSON database.
 
-<h2>Programs used</h2>
+<h2>Components</h2>
 <ul>
 <li>NodeJS</li>
 <li>PUG</li>
