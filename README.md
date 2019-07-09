@@ -11,4 +11,4 @@ Project for Tafe, assesment to build a NodeJS website using a local JSON databas
 <h2> Modules </h2>
 
 <h3>Topic<h3>
-Detective crime solving game. For those interested in 'playing', the user reads the 'Case File' page which gives the details of the 'case', then moves onto visiting the characters and destinations in the 'Directory' to get clues to solve the mystery. Once finished, the user go to the 'Solve' page to select the character who they think is the culprit in the drop-down menu. 
+<p> Detective crime solving game. For those interested in 'playing', the user reads the 'Case File' page which gives the details of the 'case', then moves onto visiting the characters and destinations in the 'Directory' to get clues to solve the mystery. Once finished, the user go to the 'Solve' page to select the character who they think is the culprit in the drop-down menu. </p>
