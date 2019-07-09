@@ -9,6 +9,13 @@ Project for Tafe, assesment to build a NodeJS website using a local JSON databas
 </ul>
 
 <h2> Modules </h2>
+<ul>
+  <li>Body Parser</li>
+  <li>Express</li>
+  <li>Http Errors</li>
+  <li>Pug</li>
+  <li>Nodemon</li>
+  </ul>
 
 <h3>Topic<h3>
   
