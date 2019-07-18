@@ -6,6 +6,7 @@ Project for Tafe, assesment to build a NodeJS website using a local JSON databas
 <li>NodeJS</li>
 <li>PUG</li>
 <li>Jquery</li>
+<li>Bootstrap</li>
 </ul>
 
 <h2> Modules </h2>
